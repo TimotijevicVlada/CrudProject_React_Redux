@@ -24,12 +24,50 @@
   font-size: 22px;
 }
 
-.App .header .auth {
-  text-decoration: none;
-  color: inherit;
+.App .header .pages .curr_user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.App .header .auth:hover {
+.App .header .pages .curr_user .user_me {
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin-right: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.App .header .pages .curr_user .logout {
+  cursor: pointer;
+}
+
+.App .header .pages .curr_user .logout:hover {
+  text-decoration: underline;
+}
+
+.App .header .pages .auth {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 10px;
+}
+
+.App .header .pages .auth:hover {
   text-decoration: underline;
 }
 
@@ -93,7 +131,8 @@
   padding: 20px;
 }
 
-.App .pages .auth {
+.App .pages .signup,
+.App .pages .login {
   -webkit-box-flex: 9;
       -ms-flex: 9;
           flex: 9;
@@ -103,16 +142,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.App .pages .auth .signup form,
-.App .pages .auth .login form {
+.App .pages .signup form,
+.App .pages .login form {
   width: 400px;
   height: 400px;
   background-color: lightgray;
@@ -130,16 +169,16 @@
   border-radius: 10px;
 }
 
-.App .pages .auth .signup form h2,
-.App .pages .auth .login form h2 {
+.App .pages .signup form h2,
+.App .pages .login form h2 {
   text-align: center;
   font-weight: 200;
 }
 
-.App .pages .auth .signup form .signup_content,
-.App .pages .auth .signup form .login_content,
-.App .pages .auth .login form .signup_content,
-.App .pages .auth .login form .login_content {
+.App .pages .signup form .signup_content,
+.App .pages .signup form .login_content,
+.App .pages .login form .signup_content,
+.App .pages .login form .login_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,10 +188,10 @@
           flex-direction: column;
 }
 
-.App .pages .auth .signup form .signup_content input,
-.App .pages .auth .signup form .login_content input,
-.App .pages .auth .login form .signup_content input,
-.App .pages .auth .login form .login_content input {
+.App .pages .signup form .signup_content input,
+.App .pages .signup form .login_content input,
+.App .pages .login form .signup_content input,
+.App .pages .login form .login_content input {
   margin-top: 20px;
   font-size: 17px;
   background-color: transparent;
@@ -161,46 +200,46 @@
   padding: 10px 0px 5px 0px;
 }
 
-.App .pages .auth .signup form .signup_content input:focus,
-.App .pages .auth .signup form .login_content input:focus,
-.App .pages .auth .login form .signup_content input:focus,
-.App .pages .auth .login form .login_content input:focus {
+.App .pages .signup form .signup_content input:focus,
+.App .pages .signup form .login_content input:focus,
+.App .pages .login form .signup_content input:focus,
+.App .pages .login form .login_content input:focus {
   outline: none;
   border-bottom: 1px solid black;
 }
 
-.App .pages .auth .signup form .signup_content input:focus::-webkit-input-placeholder,
-.App .pages .auth .signup form .login_content input:focus::-webkit-input-placeholder,
-.App .pages .auth .login form .signup_content input:focus::-webkit-input-placeholder,
-.App .pages .auth .login form .login_content input:focus::-webkit-input-placeholder {
+.App .pages .signup form .signup_content input:focus::-webkit-input-placeholder,
+.App .pages .signup form .login_content input:focus::-webkit-input-placeholder,
+.App .pages .login form .signup_content input:focus::-webkit-input-placeholder,
+.App .pages .login form .login_content input:focus::-webkit-input-placeholder {
   color: black;
 }
 
-.App .pages .auth .signup form .signup_content input:focus:-ms-input-placeholder,
-.App .pages .auth .signup form .login_content input:focus:-ms-input-placeholder,
-.App .pages .auth .login form .signup_content input:focus:-ms-input-placeholder,
-.App .pages .auth .login form .login_content input:focus:-ms-input-placeholder {
+.App .pages .signup form .signup_content input:focus:-ms-input-placeholder,
+.App .pages .signup form .login_content input:focus:-ms-input-placeholder,
+.App .pages .login form .signup_content input:focus:-ms-input-placeholder,
+.App .pages .login form .login_content input:focus:-ms-input-placeholder {
   color: black;
 }
 
-.App .pages .auth .signup form .signup_content input:focus::-ms-input-placeholder,
-.App .pages .auth .signup form .login_content input:focus::-ms-input-placeholder,
-.App .pages .auth .login form .signup_content input:focus::-ms-input-placeholder,
-.App .pages .auth .login form .login_content input:focus::-ms-input-placeholder {
+.App .pages .signup form .signup_content input:focus::-ms-input-placeholder,
+.App .pages .signup form .login_content input:focus::-ms-input-placeholder,
+.App .pages .login form .signup_content input:focus::-ms-input-placeholder,
+.App .pages .login form .login_content input:focus::-ms-input-placeholder {
   color: black;
 }
 
-.App .pages .auth .signup form .signup_content input:focus::placeholder,
-.App .pages .auth .signup form .login_content input:focus::placeholder,
-.App .pages .auth .login form .signup_content input:focus::placeholder,
-.App .pages .auth .login form .login_content input:focus::placeholder {
+.App .pages .signup form .signup_content input:focus::placeholder,
+.App .pages .signup form .login_content input:focus::placeholder,
+.App .pages .login form .signup_content input:focus::placeholder,
+.App .pages .login form .login_content input:focus::placeholder {
   color: black;
 }
 
-.App .pages .auth .signup form .signup_content button,
-.App .pages .auth .signup form .login_content button,
-.App .pages .auth .login form .signup_content button,
-.App .pages .auth .login form .login_content button {
+.App .pages .signup form .signup_content button,
+.App .pages .signup form .login_content button,
+.App .pages .login form .signup_content button,
+.App .pages .login form .login_content button {
   margin-top: 20px;
   font-size: 18px;
   padding: 10px 0px;
@@ -209,27 +248,35 @@
   cursor: pointer;
 }
 
-.App .pages .auth .signup form .signup_content button:hover,
-.App .pages .auth .signup form .login_content button:hover,
-.App .pages .auth .login form .signup_content button:hover,
-.App .pages .auth .login form .login_content button:hover {
+.App .pages .signup form .signup_content button:hover,
+.App .pages .signup form .login_content button:hover,
+.App .pages .login form .signup_content button:hover,
+.App .pages .login form .login_content button:hover {
   background-color: white;
 }
 
-.App .pages .auth .signup form .signup_content .link,
-.App .pages .auth .signup form .login_content .link,
-.App .pages .auth .login form .signup_content .link,
-.App .pages .auth .login form .login_content .link {
-  text-decoration: none;
-  text-align: right;
-  margin-top: 5px;
+.App .pages .signup form .signup_content .input_error,
+.App .pages .signup form .login_content .input_error,
+.App .pages .login form .signup_content .input_error,
+.App .pages .login form .login_content .input_error {
+  color: red;
+  font-size: 12px;
 }
 
-.App .pages .auth .signup form .signup_content .link:hover,
-.App .pages .auth .signup form .login_content .link:hover,
-.App .pages .auth .login form .signup_content .link:hover,
-.App .pages .auth .login form .login_content .link:hover {
-  text-decoration: underline;
+.App .pages .signup form .signup_content .error,
+.App .pages .signup form .login_content .error,
+.App .pages .login form .signup_content .error,
+.App .pages .login form .login_content .error {
+  text-align: center;
+  color: red;
+}
+
+.App .pages .signup form .signup_content .success,
+.App .pages .signup form .login_content .success,
+.App .pages .login form .signup_content .success,
+.App .pages .login form .login_content .success {
+  text-align: center;
+  color: #05aa05;
 }
 
 .App .footer {

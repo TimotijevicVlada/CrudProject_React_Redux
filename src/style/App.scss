@@ -14,11 +14,37 @@
     .logo {
       font-size: 22px;
     }
-    .auth {
-      text-decoration: none;
-      color: inherit;
-      &:hover {
-        text-decoration: underline;
+    .pages {
+      .curr_user {
+        display: flex;
+        align-items: center;
+        .user_me {
+          width: 40px;
+          height: 40px;
+          background-color: blue;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          margin-right: 10px;
+          font-size: 22px;
+          cursor: pointer;
+        }
+        .logout {
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .auth {
+        text-decoration: none;
+        color: inherit;
+        margin-left: 10px;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -59,67 +85,69 @@
       min-height: 88vh;
       padding: 20px;
     }
-    .auth {
+    .signup,
+    .login {
       flex: 9;
       min-height: 88vh;
       padding: 20px;
       height: 100%;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
-      .signup,
-      .login {
-        form {
-          width: 400px;
-          height: 400px;
-          background-color: lightgray;
-          padding: 20px;
+      form {
+        width: 400px;
+        height: 400px;
+        background-color: lightgray;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 10px;
+        h2 {
+          text-align: center;
+          font-weight: 200;
+        }
+        .signup_content,
+        .login_content {
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
-          border-radius: 10px;
-          h2 {
-            text-align: center;
-            font-weight: 200;
+          input {
+            margin-top: 20px;
+            font-size: 17px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid gray;
+            padding: 10px 0px 5px 0px;
+            &:focus {
+              outline: none;
+              border-bottom: 1px solid black;
+              &::placeholder {
+                color: black;
+              }
+            }
           }
-          .signup_content,
-          .login_content {
-            display: flex;
-            flex-direction: column;
-            input {
-              margin-top: 20px;
-              font-size: 17px;
-              background-color: transparent;
-              border: none;
-              border-bottom: 1px solid gray;
-              padding: 10px 0px 5px 0px;
-              &:focus {
-                outline: none;
-                border-bottom: 1px solid black;
-                &::placeholder {
-                  color: black;
-                }
-              }
+          button {
+            margin-top: 20px;
+            font-size: 18px;
+            padding: 10px 0px;
+            border-radius: 7px;
+            border: none;
+            cursor: pointer;
+            &:hover {
+              background-color: white;
             }
-            button {
-              margin-top: 20px;
-              font-size: 18px;
-              padding: 10px 0px;
-              border-radius: 7px;
-              border: none;
-              cursor: pointer;
-              &:hover {
-                background-color: white;
-              }
-            }
-            .link {
-              text-decoration: none;
-              text-align: right;
-              margin-top: 5px;
-              &:hover {
-                text-decoration: underline;
-              }
-            }
+          }
+          .input_error {
+            color: red;
+            font-size: 12px;
+          }
+          .error {
+            text-align: center;
+            color: red;
+          }
+          .success {
+            text-align: center;
+            color: rgb(5, 170, 5);
           }
         }
       }
