@@ -1,0 +1,248 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+.App .header {
+  height: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #dfdfdf;
+}
+
+.App .header .logo {
+  font-size: 22px;
+}
+
+.App .header .auth {
+  text-decoration: none;
+  color: inherit;
+}
+
+.App .header .auth:hover {
+  text-decoration: underline;
+}
+
+.App .pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .pages .navbar {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  min-height: 88vh;
+  padding: 20px;
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.App .pages .navbar .link {
+  color: inherit;
+  width: 100%;
+  border-bottom: 1px solid #c4c4c4;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 0px 5px 0px;
+  font-size: 18px;
+}
+
+.App .pages .navbar .link:hover {
+  background-color: #ebebeb;
+}
+
+.App .pages .table {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  min-height: 88vh;
+  padding: 20px;
+}
+
+.App .pages .galery {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  min-height: 88vh;
+  padding: 20px;
+}
+
+.App .pages .todo {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  min-height: 88vh;
+  padding: 20px;
+}
+
+.App .pages .auth {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  min-height: 88vh;
+  padding: 20px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .pages .auth .signup form,
+.App .pages .auth .login form {
+  width: 400px;
+  height: 400px;
+  background-color: lightgray;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+}
+
+.App .pages .auth .signup form h2,
+.App .pages .auth .login form h2 {
+  text-align: center;
+  font-weight: 200;
+}
+
+.App .pages .auth .signup form .signup_content,
+.App .pages .auth .signup form .login_content,
+.App .pages .auth .login form .signup_content,
+.App .pages .auth .login form .login_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.App .pages .auth .signup form .signup_content input,
+.App .pages .auth .signup form .login_content input,
+.App .pages .auth .login form .signup_content input,
+.App .pages .auth .login form .login_content input {
+  margin-top: 20px;
+  font-size: 17px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 10px 0px 5px 0px;
+}
+
+.App .pages .auth .signup form .signup_content input:focus,
+.App .pages .auth .signup form .login_content input:focus,
+.App .pages .auth .login form .signup_content input:focus,
+.App .pages .auth .login form .login_content input:focus {
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.App .pages .auth .signup form .signup_content input:focus::-webkit-input-placeholder,
+.App .pages .auth .signup form .login_content input:focus::-webkit-input-placeholder,
+.App .pages .auth .login form .signup_content input:focus::-webkit-input-placeholder,
+.App .pages .auth .login form .login_content input:focus::-webkit-input-placeholder {
+  color: black;
+}
+
+.App .pages .auth .signup form .signup_content input:focus:-ms-input-placeholder,
+.App .pages .auth .signup form .login_content input:focus:-ms-input-placeholder,
+.App .pages .auth .login form .signup_content input:focus:-ms-input-placeholder,
+.App .pages .auth .login form .login_content input:focus:-ms-input-placeholder {
+  color: black;
+}
+
+.App .pages .auth .signup form .signup_content input:focus::-ms-input-placeholder,
+.App .pages .auth .signup form .login_content input:focus::-ms-input-placeholder,
+.App .pages .auth .login form .signup_content input:focus::-ms-input-placeholder,
+.App .pages .auth .login form .login_content input:focus::-ms-input-placeholder {
+  color: black;
+}
+
+.App .pages .auth .signup form .signup_content input:focus::placeholder,
+.App .pages .auth .signup form .login_content input:focus::placeholder,
+.App .pages .auth .login form .signup_content input:focus::placeholder,
+.App .pages .auth .login form .login_content input:focus::placeholder {
+  color: black;
+}
+
+.App .pages .auth .signup form .signup_content button,
+.App .pages .auth .signup form .login_content button,
+.App .pages .auth .login form .signup_content button,
+.App .pages .auth .login form .login_content button {
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 10px 0px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+
+.App .pages .auth .signup form .signup_content button:hover,
+.App .pages .auth .signup form .login_content button:hover,
+.App .pages .auth .login form .signup_content button:hover,
+.App .pages .auth .login form .login_content button:hover {
+  background-color: white;
+}
+
+.App .pages .auth .signup form .signup_content .link,
+.App .pages .auth .signup form .login_content .link,
+.App .pages .auth .login form .signup_content .link,
+.App .pages .auth .login form .login_content .link {
+  text-decoration: none;
+  text-align: right;
+  margin-top: 5px;
+}
+
+.App .pages .auth .signup form .signup_content .link:hover,
+.App .pages .auth .signup form .login_content .link:hover,
+.App .pages .auth .login form .signup_content .link:hover,
+.App .pages .auth .login form .login_content .link:hover {
+  text-decoration: underline;
+}
+
+.App .footer {
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #dfdfdf;
+}
+/*# sourceMappingURL=App.css.map */

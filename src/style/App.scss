@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+.App {
+  .header {
+    height: 7vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(223, 223, 223);
+    .logo {
+      font-size: 22px;
+    }
+    .auth {
+      text-decoration: none;
+      color: inherit;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .pages {
+    display: flex;
+    .navbar {
+      flex: 3;
+      min-height: 88vh;
+      padding: 20px;
+      background-color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+      .link {
+        color: inherit;
+        width: 100%;
+        border-bottom: 1px solid rgb(196, 196, 196);
+        text-align: center;
+        text-decoration: none;
+        padding: 15px 0px 5px 0px;
+        font-size: 18px;
+        &:hover {
+          background-color: rgb(235, 235, 235);
+        }
+      }
+    }
+    .table {
+      flex: 9;
+      min-height: 88vh;
+      padding: 20px;
+    }
+    .galery {
+      flex: 9;
+      min-height: 88vh;
+      padding: 20px;
+    }
+    .todo {
+      flex: 9;
+      min-height: 88vh;
+      padding: 20px;
+    }
+    .auth {
+      flex: 9;
+      min-height: 88vh;
+      padding: 20px;
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      .signup,
+      .login {
+        form {
+          width: 400px;
+          height: 400px;
+          background-color: lightgray;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          border-radius: 10px;
+          h2 {
+            text-align: center;
+            font-weight: 200;
+          }
+          .signup_content,
+          .login_content {
+            display: flex;
+            flex-direction: column;
+            input {
+              margin-top: 20px;
+              font-size: 17px;
+              background-color: transparent;
+              border: none;
+              border-bottom: 1px solid gray;
+              padding: 10px 0px 5px 0px;
+              &:focus {
+                outline: none;
+                border-bottom: 1px solid black;
+                &::placeholder {
+                  color: black;
+                }
+              }
+            }
+            button {
+              margin-top: 20px;
+              font-size: 18px;
+              padding: 10px 0px;
+              border-radius: 7px;
+              border: none;
+              cursor: pointer;
+              &:hover {
+                background-color: white;
+              }
+            }
+            .link {
+              text-decoration: none;
+              text-align: right;
+              margin-top: 5px;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(223, 223, 223);
+  }
+}
