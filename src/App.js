@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import './style/App.css';
 import Navbar from './components/static/Navbar';
 import Table from './components/pages/Table';
 import Galery from './components/pages/Galery';
@@ -10,6 +9,7 @@ import Login from './components/pages/auth/Login';
 import Signup from "./components/pages/auth/Signup";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from './components/static/Footer';
+import './style/App.css';
 
 function App() {
 
@@ -19,7 +19,7 @@ function App() {
   const allUsers = useSelector(state => state.signup);
   const { users } = allUsers;
 
-  //I need to put these functions in this component to save user and users after refreshing pages
+  //I have to put these functions in this component to save user and users after refreshing pages
   //Get users from localStorage
   useEffect(() => {
     const storage = JSON.parse(localStorage.getItem("auth"));
