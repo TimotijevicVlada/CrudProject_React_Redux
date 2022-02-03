@@ -13,7 +13,7 @@ export const FetchFailure = () => ({
     type: "FETCH_PHOTOS_FAILURE"
 })
 
-//Function that get the user data and set to the state
+//Function that get the photos data and set to the state
 export const fetchPhotos = (search) => {
     return async (dispatch) => {
         dispatch({ type: "LOADING_PHOTOS" });

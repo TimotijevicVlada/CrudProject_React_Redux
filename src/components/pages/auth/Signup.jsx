@@ -8,6 +8,7 @@ const Signup = () => {
     const auth = useSelector(state => state.signup);
     const { users, usersError, usersSuccess } = auth;
 
+    //Formik library
     const formik = useFormik({
         initialValues: {
             id: null,
@@ -19,7 +20,6 @@ const Signup = () => {
         onSubmit: (values) => {
             const check = users.find(item => item.username === values.username || item.email === values.email);
             const newUser = { ...values, id: Math.floor(Math.random() * 1000000) }
-            console.log(newUser);
             if (check) {
                 dispatch({ type: "USERS_ERROR", payload: true });
                 dispatch({ type: "USERS_SUCCESS", payload: false });

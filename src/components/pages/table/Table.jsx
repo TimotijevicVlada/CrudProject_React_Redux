@@ -28,6 +28,7 @@ export default function Table() {
   const tableData = useSelector(state => state.table);
   const { data, isLoading } = tableData;
 
+  //Filtered table item by select element
   const display = filteredItem ? filteredItem : data;
 
   useEffect(() => {

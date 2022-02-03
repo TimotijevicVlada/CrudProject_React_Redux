@@ -15,6 +15,7 @@ const Galery = () => {
     setError(false);
   }, [dispatch])
 
+  //Function that search the photos
   const handleSubmit = (e) => {
     e.preventDefault();
     if (search) {
