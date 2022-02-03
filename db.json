@@ -1,44 +1,54 @@
 {
-    "posts": [
-        {
-            "id": "1",
-            "title": "Second title",
-            "body": "This is some tekst..."
-        },
-        {
-            "id": "2",
-            "title": "Second title",
-            "body": "This is some tekst..."
-        },
-        {
-            "id": "3",
-            "title": "Second title",
-            "body": "This is some tekst..."
-        },
-        {
-            "id": "4",
-            "title": "Second title",
-            "body": "This is some tekst..."
-        },
-        {
-            "id": "5",
-            "title": "Second title",
-            "body": "This is some tekst..."
-        },
-        {
-            "id": "6",
-            "title": "Second title",
-            "body": "This is some tekst..."
-        },
-        {
-            "id": "7",
-            "title": "Second title",
-            "body": "This is some tekst..."
-        },
-        {
-            "id": "8",
-            "title": "Second title",
-            "body": "This is some tekst..."
-        }
-    ]
+  "posts": [
+    {
+      "title": "adawa",
+      "body": "adawdw",
+      "id": 7
+    },
+    {
+      "title": "adadadwad",
+      "body": "adwdaadawadw",
+      "id": 8
+    },
+    {
+      "title": "adawad",
+      "body": "adaawda",
+      "id": 9
+    },
+    {
+      "title": "awdawwd",
+      "body": "awdawdw",
+      "id": 10
+    },
+    {
+      "title": "adadwdwsdadsdadasa",
+      "body": "adwdawdad",
+      "id": 11
+    },
+    {
+      "title": "adawawd",
+      "body": "adawdaw",
+      "id": 12
+    },
+    {
+      "title": "adawd",
+      "body": "adadw",
+      "id": 13
+    },
+    {
+      "title": "awdaawd",
+      "body": "awdaw",
+      "id": 14
+    },
+    {
+      "title": "adawwd",
+      "body": "adaw",
+      "id": 15
+    },
+    {
+      "title": "Vlada",
+      "body": "Vlada Timotijevic",
+      "id": 16
+    }
+  ]
 }
