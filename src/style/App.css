@@ -115,6 +115,12 @@
   padding: 20px;
 }
 
+.App .pages .table .table_title {
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
 .App .pages .galery {
   -webkit-box-flex: 9;
       -ms-flex: 9;
@@ -164,9 +170,15 @@
   background-color: lightgray;
 }
 
+.App .pages .galery .error {
+  color: red;
+  text-align: center;
+  margin-top: 15px;
+}
+
 .App .pages .galery .image_container {
   max-width: 70rem;
-  margin: 4rem auto;
+  margin: 1rem auto;
   display: -ms-grid;
   display: grid;
   grid-gap: 1em;

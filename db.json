@@ -1,0 +1,44 @@
+{
+    "posts": [
+        {
+            "id": "1",
+            "title": "Second title",
+            "body": "This is some tekst..."
+        },
+        {
+            "id": "2",
+            "title": "Second title",
+            "body": "This is some tekst..."
+        },
+        {
+            "id": "3",
+            "title": "Second title",
+            "body": "This is some tekst..."
+        },
+        {
+            "id": "4",
+            "title": "Second title",
+            "body": "This is some tekst..."
+        },
+        {
+            "id": "5",
+            "title": "Second title",
+            "body": "This is some tekst..."
+        },
+        {
+            "id": "6",
+            "title": "Second title",
+            "body": "This is some tekst..."
+        },
+        {
+            "id": "7",
+            "title": "Second title",
+            "body": "This is some tekst..."
+        },
+        {
+            "id": "8",
+            "title": "Second title",
+            "body": "This is some tekst..."
+        }
+    ]
+}

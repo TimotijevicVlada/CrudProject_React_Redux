@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Navbar from './components/static/Navbar';
-import Table from './components/pages/Table';
+import Table from './components/pages/table/Table';
 import Galery from './components/pages/Galery';
 import Todo from './components/pages/Todo';
 import Header from './components/static/Header';
