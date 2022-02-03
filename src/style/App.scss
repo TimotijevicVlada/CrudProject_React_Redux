@@ -127,7 +127,6 @@
           background-color: whitesmoke;
           width: 350px;
           min-height: 400px;
-          border-radius: 15px;
           padding: 20px;
           display: flex;
           flex-direction: column;
@@ -285,12 +284,14 @@
       form {
         width: 400px;
         height: 400px;
-        background-color: lightgray;
+        background-color: white;
         padding: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border-radius: 10px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+          0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+          0 16px 16px rgba(0, 0, 0, 0.12);
         h2 {
           text-align: center;
           font-weight: 200;
@@ -322,7 +323,7 @@
             border: none;
             cursor: pointer;
             &:hover {
-              background-color: white;
+              background-color: lightgray;
             }
           }
           .input_error {

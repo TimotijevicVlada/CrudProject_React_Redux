@@ -93,7 +93,7 @@ const Todo = () => {
             value={todo}
             onChange={(e) => setTodo(e.target.value)}
           />
-          <Button onClick={handleSubmit} variant='contained' color='primary' size="large" type='submit'>Create</Button>
+          <Button onClick={handleSubmit} style={{padding: "13px"}} variant='contained' color='primary' size="large" type='submit'>Create</Button>
         </Box>
         {error && <div className='error'>Your field is empty!</div>}
       </form>
@@ -125,7 +125,7 @@ const Todo = () => {
             <CardActions>
               <Button onClick={() => handleEditing(todo)} style={{ backgroundColor: "orange", padding: "5px 10px", color: "white" }} size="small">Update</Button>
               <Button onClick={() => handleDelete(todo)} style={{ backgroundColor: "red", padding: "5px 10px", color: "white" }} size="small">Delete</Button>
-              <Button onClick={() => handleComplete(todo)} style={{ backgroundColor: "blue", padding: "5px 10px", color: "white" }} size="small">Complete</Button>
+              <Button onClick={() => handleComplete(todo)} style={{ backgroundColor: "green", padding: "5px 10px", color: "white" }} size="small">Complete</Button>
             </CardActions>
           </Card>
         ))}
